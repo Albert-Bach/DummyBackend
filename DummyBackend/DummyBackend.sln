@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyBackend", "DummyBackend\DummyBackend.csproj", "{DCCE8810-66BA-41F6-BA74-417ED3EAFEAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCCE8810-66BA-41F6-BA74-417ED3EAFEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCE8810-66BA-41F6-BA74-417ED3EAFEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCE8810-66BA-41F6-BA74-417ED3EAFEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCE8810-66BA-41F6-BA74-417ED3EAFEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0419544B-8D8A-47E2-BDD6-8198290AC574}
+	EndGlobalSection
+EndGlobal
