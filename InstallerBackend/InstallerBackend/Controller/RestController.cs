@@ -31,8 +31,9 @@ namespace InstallerBackend.Controllers
                 return Json(new { result = "ok", data = technologyList.FilterFocus(focus) });
             }
             else
-
+            {
                 return Json(new { result = "error", error = "Wrong query!" });
+            }
         }
     }
 }
