@@ -1,6 +1,5 @@
 ﻿using InstallerBackend.Model;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace InstallerBackend.Controllers
 {
@@ -18,22 +17,12 @@ namespace InstallerBackend.Controllers
         [Route("/query")]
         public IActionResult ListTechnology([FromQuery] string focus)
         {
-            if (focus == "c#")
+            if (focus != null)
             {
                 return Json(new { result = "ok", data = technologyList.FilterFocus(focus) });
             }
-            else if (focus == "java")
-            {
-                return Json(new { result = "ok", data = technologyList.FilterFocus(focus) });
-            }
-            else if (focus == "javascript")
-            {
-                return Json(new { result = "ok", data = technologyList.FilterFocus(focus) });
-            }
-            else
-            {
-                return Json(new { result = "error", error = "Wrong query!" });
-            }
+            
+            return Json(new { result = "error", error = "Wrong query!" });
         }
     }
 }
