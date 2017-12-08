@@ -1,5 +1,6 @@
 ﻿using InstallerBackend.Model;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace InstallerBackend.Controllers
 {
