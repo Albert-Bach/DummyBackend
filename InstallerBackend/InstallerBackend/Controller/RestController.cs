@@ -19,7 +19,7 @@ namespace InstallerBackend.Controllers
         {
             if (focus == "c#" || focus == "java" || focus == "javascript" || focus == "hardware")
             {
-                return Json(new { result = "ok", data = technologyList.FilterFocus(focus) });
+                return Json (technologyList.FilterFocus(focus));
             }
             
             return Json(new { result = "error", error = "Wrong query!" });
