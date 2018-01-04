@@ -17,14 +17,14 @@ namespace InstallerBackend.Model
             new Technology("hardware", "GCC/c++", "https://www.greenfoxacademy.com/", "1.1.9", "installstring")
         };
 
-        //public List<Technology> FilterFocus(string focus)
-        //{
-        //    return TechList.FindAll(technology => technology.Focus == focus);
-        //}
-
-        public Technology FilterFocus(string focus)
+        public List<Technology> FilterFocus(string focus)
         {
-            return TechList.FirstOrDefault(technology => technology.Focus == focus);
+            return TechList.FindAll(technology => technology.Focus == focus);
         }
+
+        //public Technology FilterFocus(string focus)
+        //{
+        //    return TechList.FirstOrDefault(technology => technology.Focus == focus);
+        //}
     }
 }
