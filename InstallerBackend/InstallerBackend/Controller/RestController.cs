@@ -15,11 +15,11 @@ namespace InstallerBackend.Controllers
 
         [HttpGet]
         [Route("/query")]
-        public IActionResult ListTechnology([FromQuery] string focus)
+        public IActionResult ListTechnology([FromQuery] string technologyfocus)
         {
-            if (focus == "c#" || focus == "java" || focus == "javascript" || focus == "hardware")
+            if (technologyfocus == "c#" || technologyfocus == "java" || technologyfocus == "javascript" || technologyfocus == "hardware")
             {
-                return Json (technologyList.FilterFocus(focus));
+                return Json (technologyList.FilterFocus(technologyfocus));
             }
             
             return Json(new { result = "error", error = "Wrong query!" });
