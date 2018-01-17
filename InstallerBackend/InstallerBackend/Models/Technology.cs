@@ -16,7 +16,7 @@
             DownloadUrl = downloadUrl;
             VersionNumber = versionNumber;
             InstallString = installString;
-            UninstallString = installString;
+            UninstallString = uninstallString;
         }
     }
 }
