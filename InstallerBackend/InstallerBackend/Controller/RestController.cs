@@ -17,7 +17,7 @@ namespace InstallerBackend.Controllers
         [Route("/query")]
         public IActionResult ListTechnology([FromQuery] string technologyfocus)
         {
-            if (technologyfocus == "c#" || technologyfocus == "java" || technologyfocus == "javascript" || technologyfocus == "hardware")
+            if (technologyfocus == "c#" || technologyfocus == "java" || technologyfocus == "javascript" || technologyfocus == "c++")
             {
                 return Json (technologyList.FilterFocus(technologyfocus));
             }
